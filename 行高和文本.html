@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            line-height: 300px;
+            height: 300px;
+            background-color: aqua;
+            /* 当行高和高一样时，字体水平居中 不加px只用数字表示font-size的倍数*/
+        }
+        /* 行高与高相同,上下居中,text-align水平居中 */
+        /* 复合写法 font-style-variant-weight-size-line-height */
+        /* text-transform cap开头变大写 up全部大写 low全部小写 */
+        /* text-indent 32px 首行缩进 */
+        body{
+            font: 18px tahoma;
+        }
+        div{text-indent: 2em;}
+    </style>
+</head>
+<body>
+    <div class="box">box是盒子</div>
+    <div class="box2">睡了aaah
+        <span>我是span</span>
+    </div>
+    <div></div>
+    <div></div>
+    <p>我是span
+        <span>我才是span</span>
+    </p>
+</body>
+</html>

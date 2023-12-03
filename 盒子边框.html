@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        /* 通配符清空内外边距 */
+        div{width: 100px;
+        height: 100px;
+        background-color: aqua;
+        border-bottom: 10px dashed;
+    border-radius: 50%;
+         margin: 30px;}
+        /* border-left-top-bottom */
+        /* borderradius 50%圆,可以设置角度,越大越圆润
+        border-radius::10px 20px 30px 40px 左上右上右下左下,如果只写了前两个则按照对角线分配,左上与右下一样 */
+        /* 用margin设置外边距 */
+    </style>
+</head>
+<body>
+    <div>我是dd</div>
+    <div>我是dd</div>
+    <!-- 兄弟元素之间外边距塌陷,margin应该是上加下是六十,但是现状是30px,所以塌陷,margin会取较大的值,单独设置也会选择较大的那个显示 -->
+    <span>我是pp</span>
+</body>
+</html>

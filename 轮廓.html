@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 100px;height: 100px;background-color: violet;margin: 10px auto;
+        border: 5px inset aqua;
+        outline: 10px outset blue;
+        box-shadow: 5px 5px 5px 5px;}
+        /* 外轮廓不占用空间，不会改变盒子大小 */
+        /* box-shadow第一个左右第二个上下第三个模糊第四个延申第五个颜色第六个外框阴影变内框阴影 */
+        /* 可以设置多阴影，用逗号隔开 box-shadow: 5px 5px 5px 5px blue,5px 5px 5px 5px yellow;}*/
+        input{outline: none;}
+        span{font-size: 36px;font-weight: bold;
+        text-shadow: 5px 5px 5px blueviolet;}
+        /* 文字没有第四个延申拉长的功能 */
+    </style>
+</head>
+<body>
+    <div>
+
+    </div>
+    <input type="text">
+    <!-- input自带外轮廓 -->
+    <!-- 盒子阴影 -->
+    <span>我是pp</span>
+</body>
+</html>

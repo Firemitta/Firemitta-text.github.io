@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;
+        padding: 0;}
+        .gege{margin: 40px;}
+        .didi{margin: 80px;}
+        /* 垂直关系会塌陷,以较大值为准,水平的话以和为准 */
+        .father{width: 500px;height: 500px;
+        background-color: violet;margin: 20px;;overflow: hidden;}
+        .son{width: 200px;height: 200px;background-color: thistle;
+        margin: 200px;;overflow: hidden;}
+        /* 子盒子的margin相当于写给父盒子,解决方法是给子盒子添加overflow:hidden,第二种解决方法给父盒子加上边框*/
+    </style>
+</head>
+<body>
+    <div class="gege">gege
+    </div>
+    <div class="didi">
+        didi
+    </div>
+    <div class="father">father
+        <div class="son">son</div>
+    </div>
+</body>
+</html>

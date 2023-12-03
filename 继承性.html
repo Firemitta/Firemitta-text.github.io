@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #item{color: aquamarine;}
+        .box{color: antiquewhite;
+        font-size: 24px;
+    font-weight: bold;}
+    .son{color: aqua;font-size: 28px;
+    color: blueviolet;}
+    /* 层叠 后写的相同的属性会覆盖掉前面的
+    color red color blue
+    后面生效 
+    相同属性前面的会被后面的覆盖
+    id选择器的权重大于类名大于通用,所以上面#item没有被下面的.son给覆盖
+    权重可以相加,权重一样,后面覆盖前面,不一样则以权重最高的为准
+    .son.box*/
+    /* !important是最高的,不再比较权重,比行内还高一些 */
+    
+    </style>
+    <link rel="stylesheet" href="./外部样式.css">
+    <!-- 外引的权重与写在style标签中的一样 -->
+    <!-- 宽高不继承,但是子盒子的宽度会继承父盒子,高度由内容撑开 -->
+</head>
+<body>
+    <!-- 后代可以继承子代,当给父盒子设置属性,会被子元素继承,如果子元素有自己的属性,那么会优先子元素的属性,选择器选中的元素越少权重越高-->
+    <div class="box">我是hh
+        <div class="son" id="item" style="color: azure;">我是cc
+        <!-- 行内样式权重最高,即使#item都无法覆盖 -->
+        </div>
+    </div>
+</body>
+</html>

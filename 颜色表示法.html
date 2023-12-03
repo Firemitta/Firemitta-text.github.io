@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <style>
+        .box{color: rgb(red, green, blue);}
+/* 0-255之间选择 alpha代表透明度0-1
+十六进制 #000000 */
+.box2{color: rgb(#0f0, green, blue);}
+.box{color:rgba(red, green, blue, alpha);}
+/* 字体大小，在谷歌浏览器中字体大小默认16px，一个网页中字体最小12px 最常用的字体大小是12，14，16 */
+/* 继承：子继承父级样式 */
+div{font-size: 20px;}
+p span{font-size: 60%;}
+/* 相对于父级的百分比 */
+body{font-family: '黑体';}
+.box{font-weight: 200;}
+.box2{font-weight: bold;}
+.box{font-style: italic;}
+em{font-style: normal;}
+.box{font-variant: small-caps;}
+/* 将小写字母变大写，字体不变 */
+.box2{font-variant: normal;}
+     </style>
+<!-- 如何设置字体 一般给body设置，可以设置多个字体但如果第一个字体就有了就不会往下看，然后被引号包裹，有些字体名字就是中文 -->
+<!-- 字体粗细 size 和 font-weight normal默认粗细，不会改变 100-900取值，400默认 bold700-->
+<!-- 字体倾斜 font-style italic倾斜 normal常规-->
+
+</head>
+<body>
+    <div class="box">box是盒子</div>
+    <div class="box2">睡了aaah
+        <span>我是span</span>
+    </div>
+    <div></div>
+    <div></div>
+    <p>我是span
+        <span>我才是span</span>
+    </p>
+    <em>1234567</em>
+    <!-- em是斜体 em加上normal就会不倾斜 -->
+</body>
+</html>

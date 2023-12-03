@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 兄弟选择器：
+        +选择某个元素后面紧挨着的元素
+        -选择后面的，不一定紧挨 
+        ~只要有就可以*/
+        .item+div{color: aquamarine;}
+        .item2~ul{color: aquamarine;}
+    </style>
+</head>
+<body>
+    <div class="item">11</div>
+    <div class="item2" id="tom">22</div>
+    <div>33</div>
+    <ul>hhhhhh</ul>
+    <ul>cccccc</ul>
+</body>
+</html>

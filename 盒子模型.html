@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{padding: 0;margin: 0;}
+        /* 上右下左都有内边距,可以分别设置.如果没有左就会根据右,没有下就根据上
+        padding:10px 20px 30px 10px 
+        padding:10px 20px (10px 20px)
+        padding-top
+        padding-bottom 也可以这样一个一个设置*/
+        div.item{background-color: yellow;
+        width: 100px;height: 100px;
+    padding: 10px;margin: 10px;border: 10px solid red;}
+    /* 一个盒子大小由width height加上内边距加上边框加上外边距 ped内边
+    mar外边 */
+    .box{background-color: violet;}
+    /* 块级元素默认占满一行 
+    元素的高默认内容撑开,如果内容超出设置的宽高,任然以设置为准,内容会溢出,不会改变宽高大小
+    行内元素宽高由内容决定,因为行内设置不了宽高 */
+    div.box2{min-width: 300px;
+    max-width: 800px;
+height: 500px;
+background-color: aqua;}
+
+    </style>
+</head>
+<body>
+    <div class="item">
+        div
+    </div>
+    <div class="box">
+        小d来咯
+    </div>
+    <span>我是span</span>
+    <div class="box2">cc</div>
+</body>
+</html>
